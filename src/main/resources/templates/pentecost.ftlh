@@ -9,13 +9,9 @@
 </head>
 <body>
 <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-    <h1>Letnice (seslání Ducha svatého) v roce ${year?c}</h1>
-    <ul>
-        [#list calendar as item]
-            <li>${item.label}: <strong>${item.date?date?string.full}</strong></li>
-        [/#list]
-    </ul>
-    <div><a href="/" class="btn btn-primary">Zpět na úvod</a></div>
+
+    [@c.holiday title="Letnice (seslání Ducha svatého)" /]
+
 </div>
 </body>
 </html>
